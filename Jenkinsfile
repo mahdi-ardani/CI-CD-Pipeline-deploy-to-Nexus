@@ -41,7 +41,7 @@ pipeline {
                 nexusArtifactUploader(
                   nexusVersion: 'nexus3',
                   protocol: 'http',
-                  nexusUrl: '192.168.72.176:3000',
+                  nexusUrl: '["Nexus IP Address"]:[port]',
                   groupId: 'QA',
                   version: "${env.BUILD_ID}-${env.BUILD_TIMESTAMP}",
                   repository: 'vprofile-repo',
